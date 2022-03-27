@@ -24,7 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # bower_components
-/public/bower_components
+#/public/bower_components
 
 # Credentials Google Maps
 /src/componentes/mapas/Credentials
