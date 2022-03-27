@@ -27,7 +27,7 @@ export default class ApicultoresMasColmenas extends Component {
     componentDidMount() {
         this._isMounted = true;
 
-        var url = "http://localhost:8000/api/admin/users/mascolmenas";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/users/mascolmenas";
         fetch(url, {
         method: "GET",
         headers: {
@@ -82,7 +82,7 @@ export default class ApicultoresMasColmenas extends Component {
         for( var i = 0; i < apicultores.length; i++ ) {
             
             document.getElementById("li-apicultor-grande-" + i).style.display = "block";
-            document.getElementById("img-apicultor-grande-" + i).src = "http://localhost:8000/api/public/img/" + apicultores[i]['apicultor']['avatar'];
+            document.getElementById("img-apicultor-grande-" + i).src = "https://backendcolmenainteligente.herokuapp.com/api/public/img/" + apicultores[i]['apicultor']['avatar'];
             document.getElementById("txt-apicultor-grande-nombre-" + i).innerText = apicultores[i]['apicultor']['name'] + " " + apicultores[i]['apicultor']['lastname'];
             document.getElementById("txt-grande-cantidad-colmenas-" + i).innerText = apicultores[i]['colmenas'] + " colmenas";
             document.getElementById("txt-fecha-registro-apicultor-" + i).innerText = "Registrado el día " + this.procesar_fecha_hora(apicultores[i]['apicultor']['created_at']) ;

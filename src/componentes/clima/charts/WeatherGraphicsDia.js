@@ -312,7 +312,7 @@ export default class WeatherGraphicsDia extends Component {
         
         this._isMounted = true;
 
-        var url = new URL("http://localhost:8000/api/clima/ciudad/charts");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/clima/ciudad/charts");
         var params = {
                         ciudad: this.state.ciudad, 
                         variable: this.state.variable,

@@ -63,7 +63,7 @@ export default class ChartBar extends Component {
      * 
      */
     componentDidMount() {
-        var url = new URL("http://localhost:8000/revisacion/colmena");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/revisacion/colmena");
         var params = {
                         apiario: this.state.apiario['id_apiario'], 
                         colmena: this.state.colmena['id'], 

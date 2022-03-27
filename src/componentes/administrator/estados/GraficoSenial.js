@@ -180,7 +180,7 @@ export default class GraficoSenial extends Component {
      * 
      */
     componentDidMount() {
-        var url = new URL("http://localhost:8000/api/revisacion/senal/fechas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/senal/fechas");
         var params = {
                         apiario: this.state.apiario, 
                         colmena: this.state.colmena['id'], 

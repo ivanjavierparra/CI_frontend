@@ -213,7 +213,7 @@ export default class ChartRangoFechas extends Component {
         document.getElementById("div-spinner-publicar-" + this.state.colmena['id']).style.display = "block";
         document.getElementById("txt-mensaje-" + this.state.colmena['id']).style.display = "none";
 
-        var url = new URL("http://localhost:8000/api/revisacion/tyh/colmena");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/tyh/colmena");
         var params = {
                         //apiario: this.state.apiario.id, 
                         apiario: this.state.apiario['id'], 

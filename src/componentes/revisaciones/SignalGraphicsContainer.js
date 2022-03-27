@@ -96,7 +96,7 @@ class SignalGraphicsContainer extends Component {
       }
       
       buscarMisApiarios() { 
-        var url = 'http://localhost:8000/api/apiarios/colmenas';     
+        var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios/colmenas';     
         fetch(url, {
             method: 'GET',  
             headers:{
@@ -611,7 +611,7 @@ class SignalGraphicsContainer extends Component {
             
         console.log(variable,apiario,colmena,tipoAccion);   
         
-        var url = new URL("http://localhost:8000/api/revisaciones/senial/csv");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/senial/csv");
         var params = {
             apiario: apiario, 
             colmena: colmena, 

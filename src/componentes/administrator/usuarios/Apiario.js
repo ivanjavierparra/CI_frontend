@@ -40,7 +40,7 @@ export default class Apiario extends Component {
 
         // seteo los parámetros
 
-        var url = new URL("http://localhost:8000/api/admin/estados/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/admin/estados/colmenas");
         var params = {
                         apiario_id: this.state.apiario_id, 
                     };

@@ -29,7 +29,7 @@ export default class UltimosApicultores extends Component {
     componentDidMount() {
         this._isMounted = true;
 
-        var url = "http://localhost:8000/api/admin/users/lastusers";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/users/lastusers";
         fetch(url, {
         method: "GET",
         headers: {
@@ -85,7 +85,7 @@ export default class UltimosApicultores extends Component {
         for( var i = 0; i < apicultores.length; i++ ) {
             
             document.getElementById("li-apicultor-" + i).style.display = "block";
-            document.getElementById("img-apicultor-" + i).src = "http://localhost:8000/api/public/img/" + apicultores[i]['apicultor']['avatar'];
+            document.getElementById("img-apicultor-" + i).src = "https://backendcolmenainteligente.herokuapp.com/api/public/img/" + apicultores[i]['apicultor']['avatar'];
             document.getElementById("txt-apicultor-nombre-" + i).innerText = apicultores[i]['apicultor']['name'] + " " + apicultores[i]['apicultor']['lastname'];
             document.getElementById("txt-apicultor-fecha-" + i).innerText = this.procesar_fecha_hora(apicultores[i]['apicultor']['created_at']);
 

@@ -201,7 +201,7 @@ class DataTableApiario extends Component {
   buscarMisApiarios() {
       // ---------------   Busqueda de Apiarios ------------
     let todos_los_apiarios = [];
-    var url = new URL("http://localhost:8000/api/apiarios");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios");
     fetch(url, {
       method: "GET",
       headers: {
@@ -651,7 +651,7 @@ class DataTableApiario extends Component {
     });
 
     // Buscar todas las colmenas del apiario
-    var url = new URL("http://localhost:8000/api/apiario/colmenas");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/colmenas");
     var params = {
       apiario_id: id_apiario
     };

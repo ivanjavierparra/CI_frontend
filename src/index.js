@@ -21,7 +21,7 @@ if (token) {
         token = null;
         console.log("decoded",decoded);
       } else {
-        if (decoded.iss !== "http://localhost:8000/api/auth/login") {
+        if (decoded.iss !== "https://backendcolmenainteligente.herokuapp.com/api/auth/login") {
           cookie.remove("token");
           token = null;
         }
@@ -43,7 +43,7 @@ const render = () => {
 // Si el token existe, entonces le pido a Laravel mis datos de usuario.
 if (token) {
 axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-axios.post("http://localhost:8000/api/auth/me").then(res => {
+axios.post("https://backendcolmenainteligente.herokuapp.com/api/auth/me").then(res => {
     store.dispatch({ type: "SET_LOGIN", payload: res.data });
     render();
 });

@@ -28,7 +28,7 @@ export default class Tarjetas extends Component {
     componentDidMount() {
         this._isMounted = true;
 
-        var url = "http://localhost:8000/api/colmenas/dashboard";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/colmenas/dashboard";
         fetch(url, {
         method: "GET",
         headers: {

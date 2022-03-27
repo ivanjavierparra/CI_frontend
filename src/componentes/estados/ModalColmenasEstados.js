@@ -112,7 +112,7 @@ export default class ModalColmenasEstados extends Component {
         });
 
 
-        var url = new URL("http://localhost:8000/api/colmenas/todos");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmenas/todos");
         var params = {
                         estado: this.state.estado, 
                     };

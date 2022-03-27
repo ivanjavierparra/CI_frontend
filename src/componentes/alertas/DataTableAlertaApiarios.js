@@ -91,7 +91,7 @@ export default class DataTableAlertaApiarios extends Component {
         
         document.getElementById("titulo-contenedor").innerText = "Estado de los Apiarios en " + this.state.ciudad;
         
-        var url = new URL("http://localhost:8000/api/apiario/alertas/ciudad");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/alertas/ciudad");
         var params = {
                         ciudad: this.state.ciudad, 
                         estado: this.state.estado, // verde, amarillo, rojo

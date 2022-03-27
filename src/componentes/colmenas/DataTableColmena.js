@@ -167,7 +167,7 @@ class DataTableColmena extends Component {
 
     buscarMisApiarios() {
 
-      var url = 'http://localhost:8000/api/apiarios';     
+      var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios';     
       fetch(url, {
           method: 'GET',  
           headers:{
@@ -323,7 +323,7 @@ class DataTableColmena extends Component {
         // Ocultamos el mensaje
         document.getElementById("txt-msg-apiario").style.display = "none";
 
-        var url = new URL("http://localhost:8000/api/apiario/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/colmenas");
         var params = {
                         apiario_id: id_apiario, 
                     };
@@ -361,7 +361,7 @@ class DataTableColmena extends Component {
                     
                     var colmenas_encontradoras = data;
 
-                    var url = new URL("http://localhost:8000/api/colmenas/estados");
+                    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmenas/estados");
                     var params = {
                                     apiario_id: id_apiario, 
                                 };

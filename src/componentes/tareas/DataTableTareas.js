@@ -206,7 +206,7 @@ class DataTableTareas extends Component {
 
   buscarMisApiarios() {
       
-        var url = "http://localhost:8000/api/apiarios/apicultor";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/apiarios/apicultor";
         fetch(url, {
         method: "GET",
         headers: {
@@ -427,7 +427,7 @@ class DataTableTareas extends Component {
 
   buscarColmenas(localidad, apiario_id) {
 
-    var url = new URL("http://localhost:8000/api/colmenas/estado/alerta_peligro");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmenas/estado/alerta_peligro");
     var params = {
                     ciudad: localidad, 
                     apiario : apiario_id,

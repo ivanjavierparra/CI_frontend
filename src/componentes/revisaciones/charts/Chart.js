@@ -129,7 +129,7 @@ export default class Chart extends Component {
         document.getElementById("txt-mensaje-" + this.state.colmena['id']).style.display = "none";
         document.getElementById("div-spinner-publicar-" + this.state.colmena['id']).style.display = "block";
 
-        var url = new URL("http://localhost:8000/api/revisacion/tyh/colmena");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/tyh/colmena");
         var params = {
                         apiario: this.state.apiario['id_apiario'], 
                         colmena: this.state.colmena['id'], 

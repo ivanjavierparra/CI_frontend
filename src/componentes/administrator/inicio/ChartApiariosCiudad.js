@@ -40,7 +40,7 @@ export default class ChartApiariosCiudad extends Component {
     componentDidMount() {
         this._isMounted = true;
 
-        var url = "http://localhost:8000/api/admin/apiarios/ciudad";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apiarios/ciudad";
         fetch(url, {
         method: "GET",
         headers: {

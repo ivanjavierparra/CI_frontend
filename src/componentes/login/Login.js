@@ -44,7 +44,7 @@ class Login extends Component {
     const data = { email: this.state.email, password: this.state.password };
 
     axios
-      .post("http://localhost:8000/api/auth/login", data)
+      .post("https://backendcolmenainteligente.herokuapp.com/api/auth/login", data)
 
       .then(res => {
         console.log(res);
@@ -59,7 +59,7 @@ class Login extends Component {
 
       .catch(e => this.setState({ errors: e.response.data.errors }));
 
-    /*var url = new URL("http://localhost:8000/api/auth/login");
+    /*var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/auth/login");
         fetch(url, {
             method: 'POST', 
             headers:{

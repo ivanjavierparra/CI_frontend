@@ -124,7 +124,7 @@ export default class DataTableAlertaColmenas extends Component {
   obtenerDatosColmena() {
     var ids_apiarios = this.obtenerIDsApiarios();
 
-    var url = new URL("http://localhost:8000/api/apiarios/alertas");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/alertas");
     var params = {
       apiarios: ids_apiarios,
       estado: this.state.estado

@@ -128,7 +128,7 @@ class DataTableEstadoApiario extends Component {
 
     buscarMisApiarios() {
 
-      var url = 'http://localhost:8000/api/apiarios';     
+      var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios';     
       fetch(url, {
           method: 'GET',  
           headers:{
@@ -286,7 +286,7 @@ class DataTableEstadoApiario extends Component {
         // Ocultamos el mensaje
         document.getElementById("txt-msg-apiario").style.display = "none";
 
-        var url = new URL("http://localhost:8000/api/apiario/estado");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/estado");
         var params = {
                         apiario_id: id_apiario, 
                     };
@@ -544,7 +544,7 @@ createTextSelect(direccion_chacra, nombre_fantasia) {
       var id = event.target.id;      
       var id_apiario = id.split("-")[1];
 
-      var url = new URL("http://localhost:8000/api/apiarios/estado/detalle");
+      var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/estado/detalle");
       var params = {
                       apiario_id: id_apiario, 
                   };

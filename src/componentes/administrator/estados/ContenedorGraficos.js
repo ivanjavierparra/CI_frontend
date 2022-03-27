@@ -82,14 +82,14 @@ export default class ContenedorGraficos extends Component {
         console.log("testvalue", this.state.direccion_chacra);
         console.log("testvalue", this.state.variable);
 
-        var url = new URL("http://localhost:8000/api/admin/apiarios/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/admin/apiarios/colmenas");
         var params = {
                         apiario: this.state.apiario, 
                     };
         
         Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
         
-        //var url = 'http://localhost:8000/api/apiarios/'+ this.state.apiario + '/colmenas';     
+        //var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios/'+ this.state.apiario + '/colmenas';     
         fetch(url, {
             method: 'GET',  
             headers:{

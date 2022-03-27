@@ -57,7 +57,7 @@ class AdminMenu extends Component {
                       <div className="user-panel">
                         <div className="pull-left image">
                           {/* <img src={logo} className="img-circle" alt="User" /> */}
-                          <img src={"http://localhost:8000/api/public/img/" + this.props.user.avatar} className="img-circle" alt="User" />
+                          <img src={"https://backendcolmenainteligente.herokuapp.com/api/public/img/" + this.props.user.avatar} className="img-circle" alt="User" />
                           {/* <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User" /> */}
                         </div>
                         <div className="pull-left info">

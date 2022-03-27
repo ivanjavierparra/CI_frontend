@@ -28,7 +28,7 @@ export default class ApicultoresComplicados extends Component {
     componentDidMount() {
         this._isMounted = true;
 
-        var url = "http://localhost:8000/api/admin/apiarios/complicados";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apiarios/complicados";
         fetch(url, {
         method: "GET",
         headers: {

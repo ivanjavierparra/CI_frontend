@@ -110,7 +110,7 @@ class Notificaciones extends Component {
 
   buscarNotificaciones() {
 
-      var url = 'http://localhost:8000/api/notificaciones/apicultor';     
+      var url = 'https://backendcolmenainteligente.herokuapp.com/api/notificaciones/apicultor';     
       fetch(url, {
           method: 'GET',  
           headers:{
@@ -347,7 +347,7 @@ class Notificaciones extends Component {
     var id_notificacion = id.split("-")[1];
     console.log(id_notificacion);
 
-    var url = new URL("http://localhost:8000/api/notificaciones/eliminar");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/notificaciones/eliminar");
     var params = {
                     notificacion_id: id_notificacion,
                 };
@@ -409,7 +409,7 @@ class Notificaciones extends Component {
     if (!result) return;
 
 
-    var url = new URL("http://localhost:8000/api/notificaciones/eliminar/masiva");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/notificaciones/eliminar/masiva");
     var params = {
                     notificacion_id: JSON.stringify(notificaciones_a_eliminar),
                 };

@@ -51,7 +51,7 @@ export default class ContenedorAlertaApiarios extends Component {
         this._isMounted = true;
         document.getElementById("titulo-contenedor").innerText = "Estado de los Apiarios en " + this.state.ciudad;
         
-        var url = new URL("http://localhost:8000/api/apiarios/ciudad");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/ciudad");
         var params = {
                         ciudad: this.state.ciudad, 
                     };

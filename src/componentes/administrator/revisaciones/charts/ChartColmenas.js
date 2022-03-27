@@ -198,7 +198,7 @@ export default class ChartColmenas extends Component {
         document.getElementById("div-spinner-publicar").style.display = "block";
         document.getElementById("txt-mensaje").style.display = "none";
 
-        var url = new URL("http://localhost:8000/api/revisacion/tyh/comparacion/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/tyh/comparacion/colmenas");
         var params = {
                         variable: this.state.variable,
                         colmenas: JSON.stringify(this.state.colmenas), 

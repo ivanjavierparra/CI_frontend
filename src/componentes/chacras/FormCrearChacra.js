@@ -59,7 +59,7 @@ export default class FormCrearChacra extends Component {
         }
        
         // END POINT para crear Chacra.
-        var url = 'http://localhost:8000/chacras/crear';
+        var url = 'https://backendcolmenainteligente.herokuapp.com/chacras/crear';
         // DATA a enviar.
         var data = {
           'direccion': this.state.direccion,

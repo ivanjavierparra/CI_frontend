@@ -25,7 +25,7 @@ export default class Clima extends Component {
 
         this._isMounted = true;
         
-        var url = new URL("http://localhost:8000/api/clima/ciudad/dashboard");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/clima/ciudad/dashboard");
         var params = {
                         ciudad: this.state.ciudad, 
                     };

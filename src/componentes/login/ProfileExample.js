@@ -45,7 +45,7 @@ class ProfileExample extends Component {
     };
 
     axios
-      .post("http://localhost:8000/api/auth/update", data)
+      .post("https://backendcolmenainteligente.herokuapp.com/api/auth/update", data)
 
       .then(res => {
 

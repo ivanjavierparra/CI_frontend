@@ -113,7 +113,7 @@ export default class AdminUsuarios extends Component {
 
     buscarTodosUsuarios() {
 
-        var url = "http://localhost:8000/api/admin/usuarios";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/usuarios";
             fetch(url, {
             method: "GET",
             headers: {
@@ -157,7 +157,7 @@ export default class AdminUsuarios extends Component {
             row = 
             {
                 
-                avatar: <center><img src={"http://localhost:8000/api/public/img/" + usuarios[i]['usuario']['avatar']} width={20} height={20} className="img-circle" alt="User" /></center>,
+                avatar: <center><img src={"https://backendcolmenainteligente.herokuapp.com/api/public/img/" + usuarios[i]['usuario']['avatar']} width={20} height={20} className="img-circle" alt="User" /></center>,
                 n_y_ap: usuarios[i]['usuario']['name'] + " " + usuarios[i]['usuario']['lastname'],
                 rol: usuarios[i]['usuario']['role'] == "Beekeeper" ? "Apicultor" : "Administrador",
                 ciudad: usuarios[i]['usuario']['city'],

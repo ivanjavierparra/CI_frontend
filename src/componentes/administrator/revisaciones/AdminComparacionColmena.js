@@ -167,7 +167,7 @@ class AdminComparacionColmena extends Component {
 
   buscarApicultoresyApiarios() {
 
-    var url = "http://localhost:8000/api/admin/apicultores_apiarios_colmenas";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apicultores_apiarios_colmenas";
         fetch(url, {
         method: "GET",
         headers: {
@@ -1130,7 +1130,7 @@ agregarOpcionesSelectorColmena(colmenas) {
 
     console.log(variable,colmenas,tipoAccion);
 
-    var url = new URL("http://localhost:8000/api/revisaciones/colmenas/csv");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/colmenas/csv");
     var params = {
         variable: variable,
         colmenas: JSON.stringify(colmenas), 

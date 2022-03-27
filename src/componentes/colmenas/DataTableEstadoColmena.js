@@ -144,7 +144,7 @@ class DataTableEstadoColmena extends Component {
 
     buscarMisApiarios() {
 
-      var url = 'http://localhost:8000/api/apiarios/estados';     
+      var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios/estados';     
       fetch(url, {
           method: 'GET',  
           headers:{
@@ -298,7 +298,7 @@ class DataTableEstadoColmena extends Component {
         // Mostramos el spinner
         document.getElementById("spinner-btn-buscar").style.display = "block";
        
-        var url = new URL("http://localhost:8000/api/apiarios/colmenas/estado");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/colmenas/estado");
         var params = {
                         apiario_id: id_apiario, 
                         colmena_id : id_colmena,
@@ -601,7 +601,7 @@ createTextSelect(direccion_chacra, nombre_fantasia) {
       if( id_apiario == "Seleccionar" ) { alert("Seleccione un apiario."); return; }
       if( id_colmena == "Seleccionar" ) { alert("Seleccione una colmena."); return; }
       
-      var url = new URL("http://localhost:8000/api/colmenas/estado/detalle");
+      var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmenas/estado/detalle");
       var params = {
                       apiario_id: id_apiario, 
                       colmena_id : id_colmena,

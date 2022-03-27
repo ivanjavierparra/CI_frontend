@@ -113,7 +113,7 @@ class ColmenasComparacion extends Component {
       
       
       buscarMisApiarios() {
-        var url = 'http://localhost:8000/api/apiarios/apiariosycolmenas';     
+        var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios/apiariosycolmenas';     
         fetch(url, {
             method: 'GET',  
             headers:{
@@ -1053,7 +1053,7 @@ class ColmenasComparacion extends Component {
 
         console.log(variable,colmenas,tipoAccion);
 
-        var url = new URL("http://localhost:8000/api/revisaciones/colmenas/csv");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/colmenas/csv");
         var params = {
             variable: variable,
             colmenas: JSON.stringify(colmenas), 

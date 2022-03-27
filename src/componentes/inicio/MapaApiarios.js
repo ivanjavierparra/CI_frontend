@@ -103,7 +103,7 @@ export default class MapaApiarios extends Component {
 
     buscarApiarios() {
 
-        var url = "http://localhost:8000/api/apiarios/apicultor";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/apiarios/apicultor";
         fetch(url, {
         method: "GET",
         headers: {

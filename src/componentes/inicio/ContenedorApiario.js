@@ -24,7 +24,7 @@ export default class ContenedorApiario extends Component {
 
         this._isMounted = true;
 
-        var url = new URL("http://localhost:8000/api/apiarios/ciudad");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/ciudad");
         var params = {
                         ciudad: this.state.ciudad, 
                     };

@@ -77,7 +77,7 @@ class TabSettings extends Component {
         
          var token = cookie.get("token");
          axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-         axios.post("http://localhost:8000/api/auth/edite", data, {cancelToken: new CancelToken(function executor(c) 
+         axios.post("https://backendcolmenainteligente.herokuapp.com/api/auth/edite", data, {cancelToken: new CancelToken(function executor(c) 
                 {
                     cancel = c;
                 })
@@ -92,7 +92,7 @@ class TabSettings extends Component {
             if (token) {
                  
                 axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-                axios.post("http://localhost:8000/api/auth/me")
+                axios.post("https://backendcolmenainteligente.herokuapp.com/api/auth/me")
                 .then(res => {
 
                      // Actualizo REDUX y las cookies con los datos nuevos del usuario.

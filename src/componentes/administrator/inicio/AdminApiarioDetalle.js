@@ -119,7 +119,7 @@ class AdminApiarioDetalle extends Component {
 
         if( !this.state.apiario_id ) return;
 
-        var url = new URL("http://localhost:8000/api/admin/apiarios/detalle");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/admin/apiarios/detalle");
         var params = {
                         apiario_id: this.state.apiario_id, 
                     };
@@ -223,7 +223,7 @@ handleClickBuscarColmenas(event) {
   if( !this.state.apiario_id ) return;
   console.log(this.state.apiario_id);
 
-  var url = new URL("http://localhost:8000/api/apiario/colmenas");
+  var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/colmenas");
   var params = {
                   apiario_id: this.state.apiario.id, 
               };

@@ -106,7 +106,7 @@ export default class ModalColmenaInfo extends Component {
         this.resetearTodo();
         
 
-        var url = new URL("http://localhost:8000/api/revisacion/apiario/colmena/ultima_semana");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/apiario/colmena/ultima_semana");
         var params = {
                         apiario: this.state.apiario, 
                         colmena: this.state.colmena['id'], 

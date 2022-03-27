@@ -157,7 +157,7 @@ class FormCrearApiario extends Component {
    * 
    */
   buscarMisApiarios() {
-    var url = "http://localhost:8000/api/apiarios";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/apiarios";
     fetch(url, {
       method: "GET",
       headers: {
@@ -416,7 +416,7 @@ class FormCrearApiario extends Component {
     }
 
     // END POINT para crear Apiario.
-    var url = "http://localhost:8000/api/apiarios";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/apiarios";
     // DATA a enviar.
     var data = {
       nombre_fantasia : this.state.nombre_fantasia,

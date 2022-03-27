@@ -250,13 +250,13 @@ class AdminHeader extends Component {
                                 {/* User Account: style can be found in dropdown.less */}
                                 <li className="dropdown user user-menu">
                                     <a href="fake_url" className="dropdown-toggle" data-toggle="dropdown">
-                                        <img src={"http://localhost:8000/api/public/img/" + this.props.user.avatar} className="user-image" alt="User" />
+                                        <img src={"https://backendcolmenainteligente.herokuapp.com/api/public/img/" + this.props.user.avatar} className="user-image" alt="User" />
                                         <span className="hidden-xs">{this.props.user.name + " " + this.props.user.lastname}</span>
                                     </a>
                                     <ul className="dropdown-menu">
                                         {/* User image */}
                                         <li className="user-header" style={{backgroundColor:"#00a65a"}} >
-                                            <img src={"http://localhost:8000/api/public/img/" + this.props.user.avatar} className="img-circle" alt="User" />
+                                            <img src={"https://backendcolmenainteligente.herokuapp.com/api/public/img/" + this.props.user.avatar} className="img-circle" alt="User" />
                                             <p>
                                               {this.props.user.name + " " + this.props.user.lastname}
                                               <small>Miembro desde {this.props.user.created_at.split(' ')[0].split("-")[2] + "-" + this.props.user.created_at.split(' ')[0].split("-")[1] + "-" + this.props.user.created_at.split(' ')[0].split("-")[0] }</small>

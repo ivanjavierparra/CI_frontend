@@ -164,7 +164,7 @@ export default class MapaApiarios extends Component {
 
     buscarApiarios() {
 
-        var url = "http://localhost:8000/api/admin/apiarios/completo";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apiarios/completo";
         fetch(url, {
         method: "GET",
         headers: {
@@ -761,7 +761,7 @@ export default class MapaApiarios extends Component {
 
   buscarColmenas(apiario_id) {
 
-        var url = new URL("http://localhost:8000/api/apiario/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/colmenas");
         var params = {
                         apiario_id: apiario_id, 
                     };

@@ -117,7 +117,7 @@ class AdminColmena extends Component {
 
   buscarApicultoresyApiarios() {
 
-    var url = "http://localhost:8000/api/admin/apicultores_y_apiarios";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apicultores_y_apiarios";
         fetch(url, {
         method: "GET",
         headers: {
@@ -456,7 +456,7 @@ handleClickBuscarColmenas(event) {
         if( !this.state.apiario_id ) return alert("Seleccione un apiario del mapa.");
         document.getElementById("spinner").style.display = "block";
 
-        var url = new URL("http://localhost:8000/api/apiario/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/colmenas");
         var params = {
                         apiario_id: this.state.apiario_id, 
                     };

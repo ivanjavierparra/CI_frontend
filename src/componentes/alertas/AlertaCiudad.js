@@ -40,7 +40,7 @@ class AlertaCiudad extends Component {
       
         
         
-        var url = new URL("http://localhost:8000/api/alertas/dashboard");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/alertas/dashboard");
         /* var params = {
                         color: this.state.estado, 
                     };

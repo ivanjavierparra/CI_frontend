@@ -27,7 +27,7 @@ class ProfileImage extends Component {
 
         this._isMounted = true;
         
-        var url = new URL("http://localhost:8000/api/apiarios/cantidades");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/cantidades");
     
             
         fetch(url, {
@@ -93,7 +93,7 @@ class ProfileImage extends Component {
                         <img
                           className="profile-user-img img-responsive img-circle"
                           //src="../../dist/img/user4-128x128.jpg"
-                          src={"http://localhost:8000/api/public/img/" + this.props.user.avatar}
+                          src={"https://backendcolmenainteligente.herokuapp.com/api/public/img/" + this.props.user.avatar}
                           alt="User profile picture"
                         />
                         <h3 className="profile-username text-center">

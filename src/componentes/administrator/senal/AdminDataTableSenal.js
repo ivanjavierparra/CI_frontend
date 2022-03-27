@@ -127,7 +127,7 @@ export default class AdminDataTableSenal extends Component {
 
     buscarApicultoresApiariosColmenas() {
         
-        var url = "http://localhost:8000/api/admin/apicultores/apiarios/colmenas";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apicultores/apiarios/colmenas";
         fetch(url, {
         method: "GET",
         headers: {
@@ -314,7 +314,7 @@ export default class AdminDataTableSenal extends Component {
     buscarTodasRevisaciones(ciudad,apicultor,apiario,colmena,tipoAccion) {
 
         
-        var url = new URL("http://localhost:8000/api/admin/revisaciones/senal/todas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/admin/revisaciones/senal/todas");
         var params = {
                       ciudad: ciudad, 
                       apicultor: apicultor, 

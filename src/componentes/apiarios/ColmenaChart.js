@@ -54,7 +54,7 @@ export default class ColmenaChart extends Component {
 
         this._isMounted = true;
       
-        var url = new URL("http://localhost:8000/api/colmena/detalle/tyh");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmena/detalle/tyh");
         var params = {
                         apiario_id: this.state.apiario, 
                         colmena_id: this.state.colmena['id'],

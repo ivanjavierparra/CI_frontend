@@ -119,7 +119,7 @@ class DataTableRevisaciones extends Component {
     }
     
     buscarMisApiarios() {
-      var url = 'http://localhost:8000/api/apiarios/colmenas';     
+      var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios/colmenas';     
       fetch(url, {
           method: 'GET',  
           headers:{
@@ -423,7 +423,7 @@ getApiariosCiudad(ciudad) {
    
   crearCSV(apiario, colmena, tipoAccion) {
 
-    var url = new URL("http://localhost:8000/api/revisaciones/datatable/csv");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/datatable/csv");
     var params = {
       apiario: apiario, 
       colmena: colmena,
@@ -503,7 +503,7 @@ getApiariosCiudad(ciudad) {
 
    obtenerDatos(apiario, colmena, tipoAccion) {
 
-    var url = new URL("http://localhost:8000/api/revisacion/apiario/colmena");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/apiario/colmena");
     var params = {
                     apiario: apiario, 
                     colmena: colmena,

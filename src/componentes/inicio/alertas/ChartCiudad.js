@@ -83,7 +83,7 @@ export default class ChartSignal extends Component {
 
         this._isMounted = true;
 
-        var url = new URL("http://localhost:8000/api/colmena/ciudad/alertas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmena/ciudad/alertas");
         var params = {
                         estado: this.state.estado, 
                     };

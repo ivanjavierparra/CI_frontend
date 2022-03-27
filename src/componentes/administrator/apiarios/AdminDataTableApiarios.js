@@ -129,7 +129,7 @@ export default class AdminDataTableApiarios extends Component {
 
     obtenerApicultores() {
 
-      var url = "http://localhost:8000/api/admin/todos/apicultores";
+      var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/todos/apicultores";
       fetch(url, {
       method: "GET",
       headers: {
@@ -245,7 +245,7 @@ export default class AdminDataTableApiarios extends Component {
 
         document.getElementById("spinner").style.display = "block";
 
-        var url = new URL("http://localhost:8000/api/admin/todos/apiarios");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/admin/todos/apiarios");
         var params = {
           ciudad: ciudad, 
           apicultor: apicultor,

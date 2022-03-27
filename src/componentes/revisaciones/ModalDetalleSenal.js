@@ -104,7 +104,7 @@ export default class ModalDetalleSenal extends Component {
         });
 
 
-        var url = new URL("http://localhost:8000/api/revisacion/senal/detalle");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/senal/detalle");
         var params = {
                         fecha: this.state.fecha, 
                         colmena_id : this.state.colmena_id

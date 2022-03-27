@@ -132,7 +132,7 @@ class GraphicsContainer extends Component {
       
       bucarMisColmenas() {
 
-        var url = 'http://localhost:8000/api/apiarios/colmenas';     
+        var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios/colmenas';     
         fetch(url, {
             method: 'GET',  
             headers:{
@@ -843,7 +843,7 @@ class GraphicsContainer extends Component {
             colmena_id = document.getElementById("selector-colmena").value;
         }
 
-        var url = new URL("http://localhost:8000/api/revisaciones/csv");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/csv");
         var params = {
             apiario: apiario_id, 
             colmena: colmena_id, 
@@ -883,7 +883,7 @@ class GraphicsContainer extends Component {
             colmena_id = document.getElementById("selector-colmena").value;
         }
 
-        var url = new URL("http://localhost:8000/api/revisaciones/csv");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/csv");
         var params = {
             apiario: apiario_id, 
             colmena: colmena_id, 

@@ -161,7 +161,7 @@ export default class TabApiarios extends Component {
 
     buscarApiarios() {
 
-        var url = new URL("http://localhost:8000/api/apiarios/apicultor/id");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/apicultor/id");
         var params = {
                         apicultor_id: this.state.apicultor.id, 
                     };
@@ -633,7 +633,7 @@ export default class TabApiarios extends Component {
 
   buscarColmenas(apiario_id) {
 
-        var url = new URL("http://localhost:8000/api/apiario/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiario/colmenas");
         var params = {
                          apiario_id: apiario_id, 
                      };

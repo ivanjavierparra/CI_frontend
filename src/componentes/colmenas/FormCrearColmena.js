@@ -92,7 +92,7 @@ class FormCrearColmena extends Component {
 
   buscarMisApiarios() { 
 
-    var url = "http://localhost:8000/api/apiarios";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/apiarios";
     fetch(url, {
       method: "GET",
       headers: {
@@ -403,7 +403,7 @@ createDefaultValueSelector(key, text, value) {
     // Si está todo OK muestro el spinner
     document.getElementById("spinner-btn-aceptar").style.display = "block";
     // END POINT para crear Apiario.
-    var url = "http://localhost:8000/api/colmenas";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/colmenas";
     // DATA a enviar.
     var data = {
       apiario_id: this.state.apiario_seleccionado,

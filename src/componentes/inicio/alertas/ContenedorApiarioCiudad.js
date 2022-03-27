@@ -50,7 +50,7 @@ export default class ContenedorApiarioCiudad extends Component {
         console.log("Ciudad",this.state.ciudad);
         console.log("Color",this.state.estado);
 
-        var url = new URL("http://localhost:8000/api/apiarios/ciudad");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/apiarios/ciudad");
         var params = {
                         ciudad: this.state.ciudad, 
                     };

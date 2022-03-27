@@ -114,7 +114,7 @@ export default class AdminDataTableColmenas extends Component {
 
     buscarApicultoresApiariosColmenas() {
 
-        var url = "http://localhost:8000/api/admin/apicultores/apiarios/colmenas";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apicultores/apiarios/colmenas";
         fetch(url, {
         method: "GET",
         headers: {
@@ -307,7 +307,7 @@ export default class AdminDataTableColmenas extends Component {
         if( ciudad == "" && apicultor == "" ) { alert("Ingrese algún parámetro."); return; }
 
         
-        var url = new URL("http://localhost:8000/api/admin/todos/colmenas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/admin/todos/colmenas");
         var params = {
           ciudad: ciudad, 
           apicultor: apicultor,

@@ -189,7 +189,7 @@ export default class Grafico extends Component {
 
         this._isMounted = true;
 
-        var url = new URL("http://localhost:8000/api/revisacion/tyh/colmena");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/tyh/colmena");
         var params = {
                         apiario: this.state.apiario, 
                         colmena: this.state.colmena['id'], 

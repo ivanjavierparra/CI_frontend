@@ -35,7 +35,7 @@ class Estados extends Component {
 
         this._isMounted = true;
 
-        var url = new URL("http://localhost:8000/api/colmenas/dashboard");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmenas/dashboard");
         fetch(url, {
             method: 'GET', 
             headers:{

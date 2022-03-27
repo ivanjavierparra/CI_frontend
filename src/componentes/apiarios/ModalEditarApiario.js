@@ -88,7 +88,7 @@ export default class ModalEditarApiario extends Component {
     handleClickGuardar(event) {
 
         // END POINT para crear Apiario.
-        var url = 'http://localhost:8000/api/apiario/editar';
+        var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiario/editar';
         // DATA a enviar.
         var data = {
           'id_apiario' : this.state.apiario['id_apiario'],

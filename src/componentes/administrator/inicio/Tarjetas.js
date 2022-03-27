@@ -23,7 +23,7 @@ export default class Tarjetas extends Component {
     componentDidMount() {
         this._isMounted = true;
 
-        var url = "http://localhost:8000/api/admin/home/tarjetas";
+        var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/home/tarjetas";
         fetch(url, {
         method: "GET",
         headers: {

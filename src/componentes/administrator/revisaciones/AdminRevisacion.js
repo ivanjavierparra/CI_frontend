@@ -164,7 +164,7 @@ class AdminRevisacion extends Component {
 
   buscarApicultoresyApiarios() {
 
-    var url = "http://localhost:8000/api/admin/apicultores_apiarios_colmenas";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apicultores_apiarios_colmenas";
         fetch(url, {
         method: "GET",
         headers: {
@@ -1017,7 +1017,7 @@ getCantidadColmenas(apiario_id) {
           colmena_id = document.getElementById("selector-colmena").value;
       }
 
-      var url = new URL("http://localhost:8000/api/revisaciones/csv");
+      var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/csv");
       var params = {
           apiario: apiario_id, 
           colmena: colmena_id, 

@@ -52,7 +52,7 @@ export default class AdminColmenaInfo extends Component {
         this._isMounted = true;
         console.log("colmenita",this.state.colmena);
       
-        var url = new URL("http://localhost:8000/api/colmena/detalle/tyh");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/colmena/detalle/tyh");
         var params = {
                         apiario_id: this.state.apiario, 
                         colmena_id: !this.state.colmena['id'] ? this.state.colmena.id : this.state.colmena['id'],

@@ -52,14 +52,14 @@ class TabProfileImages extends Component {
       var token = cookie.get("token");
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
       axios
-     .post("http://localhost:8000/api/auth/avatar", data, { }) // controller will handle the upload etc
+     .post("https://backendcolmenainteligente.herokuapp.com/api/auth/avatar", data, { }) // controller will handle the upload etc
      .then(response => {
           console.log(response.data);                
           console.log(response.statusText);     
 
           // Obtengo mis nuevos datos
           axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-          axios.post("http://localhost:8000/api/auth/me")
+          axios.post("https://backendcolmenainteligente.herokuapp.com/api/auth/me")
           .then(res => {
                 console.log("buenas!!");
                 alert("Imagen actualizada!");
@@ -110,7 +110,7 @@ class TabProfileImages extends Component {
                                 </label>
                                 <div className="col-sm-10"> 
                                 <img id="imagen_cargada" 
-                                      src={"http://localhost:8000/api/public/img/" + this.props.user.avatar}
+                                      src={"https://backendcolmenainteligente.herokuapp.com/api/public/img/" + this.props.user.avatar}
                                       alt="avatar" className="img-fluid" style={{borderRadius:150,height:168, width:168}} />
                                 </div>
                             </div>

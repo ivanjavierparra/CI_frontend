@@ -167,7 +167,7 @@ class AdminSenal extends Component {
 
   buscarApicultoresyApiarios() {
 
-    var url = "http://localhost:8000/api/admin/apicultores_apiarios_colmenas";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apicultores_apiarios_colmenas";
         fetch(url, {
         method: "GET",
         headers: {
@@ -929,7 +929,7 @@ agregarOpcionesSelectorColmena(colmenas) {
         
     console.log(variable,apiario,colmena,tipoAccion);   
     
-    var url = new URL("http://localhost:8000/api/revisaciones/senial/csv");
+    var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisaciones/senial/csv");
     var params = {
         apiario: apiario, 
         colmena: colmena, 

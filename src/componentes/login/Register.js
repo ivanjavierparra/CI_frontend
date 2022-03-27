@@ -50,7 +50,7 @@ export default class Register extends Component {
     };
 
     axios
-      .post("http://localhost:8000/api/auth/register", data)
+      .post("https://backendcolmenainteligente.herokuapp.com/api/auth/register", data)
 
       .then(res => {
 

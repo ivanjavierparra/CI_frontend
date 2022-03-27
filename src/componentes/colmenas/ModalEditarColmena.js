@@ -87,7 +87,7 @@ export default class ModalEditarColmena extends Component {
 
     handleClickGuardar(event) {
         // END POINT para crear Apiario.
-        var url = 'http://localhost:8000/api/colmena/editar';
+        var url = 'https://backendcolmenainteligente.herokuapp.com/api/colmena/editar';
         // DATA a enviar.
         var data = {
           'id_colmena' : this.state.colmena['id'],

@@ -55,7 +55,7 @@ export default class DataTableChacra extends Component {
 
         // ---------------   Busqueda de Chacras ------------
         let todas_las_chacras = [];
-        fetch('http://localhost:8000/chacras')
+        fetch('https://backendcolmenainteligente.herokuapp.com/chacras')
             .then(response => {
                 return response.json();
             }).then(data => {
@@ -77,7 +77,7 @@ export default class DataTableChacra extends Component {
             });
         // ---------------   Busqueda de Chacras Ocupadas ------------
         let solo_chacras_ocupadas = [];
-        fetch('http://localhost:8000/chacras/consultar/ocupadas')
+        fetch('https://backendcolmenainteligente.herokuapp.com/chacras/consultar/ocupadas')
             .then(response => {
                 return response.json();
             }).then(data => {

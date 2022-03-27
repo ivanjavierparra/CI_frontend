@@ -81,7 +81,7 @@ export default class ContenedorGraficos extends Component {
         console.log("testvalue", this.state.direccion_chacra);
         console.log("testvalue", this.state.variable);
         
-        var url = 'http://localhost:8000/api/apiarios/'+ this.state.apiario + '/colmenas';     
+        var url = 'https://backendcolmenainteligente.herokuapp.com/api/apiarios/'+ this.state.apiario + '/colmenas';     
         fetch(url, {
             method: 'GET',  
             headers:{

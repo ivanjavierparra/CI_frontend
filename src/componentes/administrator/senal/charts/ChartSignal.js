@@ -227,7 +227,7 @@ export default class ChartSignal extends Component {
         // Muestro el spinner
         document.getElementById("div-spinner-publicar-" + this.state.colmena['id']).style.display = "block";
 
-        var url = new URL("http://localhost:8000/api/revisacion/senal/fechas");
+        var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/revisacion/senal/fechas");
         var params = {
                         apiario: this.state.apiario['id'], 
                         colmena: this.state.colmena['id'], 

@@ -233,7 +233,7 @@ class DataTableClima extends Component {
       
       
       
-      var url = new URL("http://localhost:8000/api/clima/ciudad/historico");
+      var url = new URL("https://backendcolmenainteligente.herokuapp.com/api/clima/ciudad/historico");
       var params = {
                       ciudad: ciudad, 
                       tipoAccion: JSON.stringify(tipoAccion),

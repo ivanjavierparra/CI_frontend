@@ -2,7 +2,7 @@
     
     // Hago una consulta a la api de OpenStreetMap
     $.ajax({
-        url: 'http://localhost:8000/chacras',                      
+        url: 'https://backendcolmenainteligente.herokuapp.com/chacras',                      
         dataType: 'json',
         method: 'GET',
         async: false,

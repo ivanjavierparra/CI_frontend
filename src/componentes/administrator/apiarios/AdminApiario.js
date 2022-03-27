@@ -123,7 +123,7 @@ class AdminApiario extends Component {
 
   buscarApicultoresyApiarios() {
 
-    var url = "http://localhost:8000/api/admin/apicultores_y_apiarios";
+    var url = "https://backendcolmenainteligente.herokuapp.com/api/admin/apicultores_y_apiarios";
         fetch(url, {
         method: "GET",
         headers: {
