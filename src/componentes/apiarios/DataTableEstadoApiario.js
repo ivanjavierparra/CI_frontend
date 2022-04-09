@@ -234,7 +234,7 @@ class DataTableEstadoApiario extends Component {
       
       // Create A Marker
       var marker = new window.google.maps.Marker({
-        position: {lat: apiarios[i]['latitud'] , lng: apiarios[i]['longitud']},
+        position: { lat: parseFloat(apiarios[i]['latitud']) , lng: parseFloat(apiarios[i]['longitud']) },
         map: map,
         title: 'Apiario',
         clickable: true

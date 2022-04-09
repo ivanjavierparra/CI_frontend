@@ -173,7 +173,7 @@ class AdminApiarioDetalle extends Component {
     
     // Create A Marker
     var marker = new window.google.maps.Marker({
-        position: {lat: apiario.latitud , lng: apiario.longitud},
+        position: { lat: parseFloat(apiario.latitud) , lng: parseFloat(apiario.longitud) },
         map: map,
         title: 'Apiario',
         clickable: true

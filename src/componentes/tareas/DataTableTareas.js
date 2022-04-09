@@ -252,7 +252,7 @@ class DataTableTareas extends Component {
         
         // Create A Marker
         var marker = new window.google.maps.Marker({
-            position: {lat: apiarios[i]['apiario']['latitud'] , lng: apiarios[i]['apiario']['longitud']},
+            position: { lat: parseFloat(apiarios[i]['apiario']['latitud']) , lng: parseFloat(apiarios[i]['apiario']['longitud']) },
             map: map,
             title: 'Apiario',
             clickable: true
