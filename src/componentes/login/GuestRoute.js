@@ -38,7 +38,7 @@ const GuestRoute = ({ component: Component, ...rest }) => {
           <Component {...props} />
           {/* <Footer /> */}
           </div>
-        ) : user.role === "Beekeeper" ? (
+        ) : user.role === "beekeeper" ? (
           <Redirect
             to={{
               pathname: "/home", // Si soy apicultor voy a /home

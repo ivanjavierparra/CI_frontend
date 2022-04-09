@@ -50,7 +50,7 @@ const BeekeeperRoute = ({ component: Component, ...rest }) => {
       {...rest}
       render={props =>
         //token ? (
-        rest.loggedIn && user.role === "Admin" ? (
+        rest.loggedIn && user.role === "admin" ? (
           <Redirect
             to={{
               pathname: "/admin/error_404", // /admin/home

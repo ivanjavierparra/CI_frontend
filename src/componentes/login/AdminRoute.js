@@ -31,7 +31,7 @@ const AdminRoute = ({ component: Component, ...rest }) => {
       {...rest}
       render={props =>
         //token ? (
-        rest.loggedIn && user.role === "Beekeeper" ? (
+        rest.loggedIn && user.role === "beekeeper" ? (
           <Redirect
             to={{
               pathname: "/error_404", // /home
